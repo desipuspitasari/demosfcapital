@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
+import ButtonPrimary from "../components/buttonprimary";
+import ButtonOutline from "../components/buttonoutline";
+import ButtonArrow from "../components/buttonarrow";
 
 export default function Home() {
   return (
@@ -11,8 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen w-full">
+      <main className="min-h-screen w-full bg-[#005eeead]">
         <Navbar />
+        <section className="py-20 flex h-full w-full">
+          <ButtonPrimary href="#" />
+          <ButtonOutline href="#" />
+          <ButtonArrow />
+        </section>
       </main>
     </div>
   );
