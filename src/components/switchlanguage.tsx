@@ -18,7 +18,7 @@ const SwicthLanguage = () => {
 
   return (
     <button
-      className="p-1 bg-white rounded-full w-14 h-6 data-[lang='en']:justify-end justify-start flex relative"
+      className="p-1 bg-gray-100 rounded-full w-14 h-6 data-[lang='en']:justify-end justify-start flex relative"
       onClick={handleClick}
       data-lang={`${isLang}`}
     >
