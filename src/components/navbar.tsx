@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex space-x-10">
           {navlist.map((item) => {
             return (
-              <NavItem href={item.href} key={`${item.href}`}>
+              <NavItem href={item.href} key={`${item.name}`}>
                 {item.name}
               </NavItem>
             );
