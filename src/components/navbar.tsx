@@ -4,6 +4,14 @@ import NavItem from "./navitem";
 import Link from "next/link";
 import SwicthLanguage from "./switchlanguage";
 
+const navlist = [
+  { name: "Tentang Kami", href: "#" },
+  { name: "Produk & layanan", href: "#" },
+  { name: "Berita & Kegiatan", href: "#" },
+  { name: "Hubungan Investor", href: "#" },
+  { name: "Kontak", href: "#" },
+];
+
 const Navbar = () => {
   return (
     <div className="fixed top-4 left-1/2 -translate-x-1/2 w-full flex justify-center px-2 lg:px-0">
@@ -17,11 +25,13 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex space-x-10">
-          <NavItem href="home" />
-          <NavItem href="home" />
-          <NavItem href="home" />
-          <NavItem href="home" />
-          <NavItem href="home" />
+          {navlist.map((item) => {
+            return (
+              <NavItem href={item.href} key={`${item.href}`}>
+                {item.name}
+              </NavItem>
+            );
+          })}
         </div>
         <SwicthLanguage />
       </div>
