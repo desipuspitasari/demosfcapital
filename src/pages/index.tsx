@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen w-full"></main>
+      <main className="min-h-screen w-full">
+        <Navbar />
+      </main>
     </div>
   );
 }
