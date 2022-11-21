@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen w-full bg-[#fff]">
+      <main className="min-h-screen w-full bg-[#005eeead]">
         <Navbar />
         <section className="py-20 flex flex-col h-full w-full">
           <ButtonPrimary href="#" />

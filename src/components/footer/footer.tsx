@@ -53,7 +53,7 @@ const Footer = ({ href }: any) => {
             })}
           </div>
         </div>
-        <div className="mt-2 lg:mt-20">
+        <div className="mt-2 text-xs lg:mt-20">
           Copyright © 2022 PT. Surya Fajar Capital All rights reserved.
         </div>
       </div>
