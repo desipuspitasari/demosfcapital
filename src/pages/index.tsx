@@ -8,6 +8,7 @@ import ButtonSecondary from "../components/buttonsecondary";
 import ButtonLink from "../components/buttonlink";
 import Footer from "../components/footer/footer";
 import HomeBanner from "../components/banner/homebanner";
+import NewsSection from "../components/section/newssection";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <ButtonSecondary href="#">Button Secondary</ButtonSecondary>
           <ButtonLink href="#">Button Link</ButtonLink>
           <HomeBanner />
+          <NewsSection />
           <Footer />
         </section>
       </main>

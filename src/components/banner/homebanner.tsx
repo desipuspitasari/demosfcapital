@@ -10,7 +10,7 @@ const HomeBanner: FC = () => {
     <>
       <section className="flex py-14 w-full flex-col bg-white">
         <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-x-6 mx-auto">
-          <div className="flex flex-col justify-center text-black  font-open-sans text-justify">
+          <div className="flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
             <div className="text-[32px] font-black mb-4">Who We Are</div>
             <div>
               PT Surya Fajar Capital Tbk adalah perusahaan investasi dengan
@@ -29,7 +29,7 @@ const HomeBanner: FC = () => {
           <div className="max-h-[546px] rounded-xl  rounded-br-[100px] overflow-hidden max-w-[546px] h-[546px] w-[546px]">
             <Image src={homebanner2} alt="" />
           </div>
-          <div className="flex flex-col justify-center text-black  font-open-sans text-justify">
+          <div className="flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
             <div className="text-[32px] font-black mb-4">What We Do</div>
             <div className="mb-4">
               Fokus kami pada jasa konsultasi keuangan serta berinvestsai pada
