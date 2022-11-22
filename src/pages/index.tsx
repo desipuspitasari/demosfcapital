@@ -25,6 +25,7 @@ export default function Home() {
           <ButtonOutline href="#"> Button Outline</ButtonOutline>
           <ButtonSecondary href="#">Button Secondary</ButtonSecondary>
           <ButtonLink href="#">Button Link</ButtonLink>
+          <HomeBanner />
           <Footer />
         </section>
       </main>
