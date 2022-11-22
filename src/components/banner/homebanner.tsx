@@ -3,8 +3,9 @@ import homebanner from "../../../public/images/homebanner.png";
 import homebanner2 from "../../../public/images/homebanner2.png";
 import Image from "next/image";
 import ButtonSecondary from "../../components/buttonsecondary";
+import { FC } from "react";
 
-const HomeBanner = () => {
+const HomeBanner: FC = () => {
   return (
     <>
       <section className="flex py-14 w-full flex-col bg-white">
@@ -18,7 +19,7 @@ const HomeBanner = () => {
               perusahaan-perusahaan unggulan.
             </div>
           </div>
-          <div className="max-h-[546px] rounded-xl  rounded-tl-[100px] overflow-hidden max-w-[546px] h-[546px] w-[546px]">
+          <div className="max-h-[546px] rounded-xl  rounded-tl-[100px] overflow-hidden max-w-[546px] h-[546px] w-[546px] justify-self-end">
             <Image src={homebanner} alt="" />
           </div>
         </div>
@@ -46,9 +47,9 @@ const HomeBanner = () => {
           </div>
         </div>
       </section>
-      <section className="flex py-14 w-full flex-col bg-blue">
+      <section className="flex py-14 w-full flex-col bg-blue-500">
         <div className="w-full max-w-6xl flex-col flex mx-auto">
-          <div className="flex flex-col justify-center text-white  font-open-sans text-left">
+          <div className="flex flex-col justify-center text-white font-open-sans text-justify">
             <div className="text-[32px] font-black mb-4">Industry Strategy</div>
             <div className="mb-5">
               Kami percaya bahwa Indonesia memiliki peluang untuk mengembangkan

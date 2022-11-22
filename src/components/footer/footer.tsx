@@ -2,6 +2,7 @@ import Link from "next/link";
 import logo from "../../../public/images/logo/logo.png";
 import Image from "next/image";
 import NavItem from "../navitem";
+import { FC } from "react";
 
 const navlist1 = [
   { name: "Tentang Kami", href: "#" },
@@ -14,7 +15,7 @@ const navlist2 = [
   { name: "Kontak", href: "#" },
 ];
 
-const Footer = ({ href }: any) => {
+const Footer: FC = () => {
   return (
     <section className="flex py-14">
       <div className="max-w-6xl w-full px-10 py-8 mx-auto bg-white flex flex-col rounded-[32px] shadow-[0_14px_64px_rgba(24,39,75,0.12)]">
