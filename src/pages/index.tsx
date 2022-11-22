@@ -7,6 +7,7 @@ import ButtonArrow from "../components/buttonarrow";
 import ButtonSecondary from "../components/buttonsecondary";
 import ButtonLink from "../components/buttonlink";
 import Footer from "../components/footer/footer";
+import HomeBanner from "../components/banner/homebanner";
 
 export default function Home() {
   return (
@@ -20,11 +21,10 @@ export default function Home() {
       <main className="min-h-screen w-full bg-[#005eeead]">
         <Navbar />
         <section className="py-20 flex flex-col h-full w-full">
-          <ButtonPrimary href="#" />
-          <ButtonOutline href="#" />
-          <ButtonArrow />
-          <ButtonSecondary href="#" />
-          <ButtonLink href="#" />
+          <ButtonPrimary href="#">Button Primary</ButtonPrimary>
+          <ButtonOutline href="#"> Button Outline</ButtonOutline>
+          <ButtonSecondary href="#">Button Secondary</ButtonSecondary>
+          <ButtonLink href="#">Button Link</ButtonLink>
           <Footer />
         </section>
       </main>
