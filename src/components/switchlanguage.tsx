@@ -39,9 +39,21 @@ const SwicthLanguage = () => {
       >
         <AnimatePresence>
           {isLang == "id" ? (
-            <Image src={idflag} alt="" fill className="object-cover" />
+            <Image
+              src={idflag}
+              alt=""
+              fill
+              sizes="100%"
+              className="object-cover"
+            />
           ) : (
-            <Image src={usflag} alt="" fill className="object-cover" />
+            <Image
+              src={usflag}
+              alt=""
+              fill
+              sizes="100%"
+              className="object-cover"
+            />
           )}
         </AnimatePresence>
       </motion.div>
