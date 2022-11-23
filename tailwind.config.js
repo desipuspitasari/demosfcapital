@@ -26,6 +26,9 @@ module.exports = {
         "open-sans": ['"Open Sans"', "sans-serif"],
         poppins: ['"Poppins"', "sans-serif"],
       },
+      transitionDuration: {
+        1500: "1500ms",
+      },
     },
   },
   plugins: [],
