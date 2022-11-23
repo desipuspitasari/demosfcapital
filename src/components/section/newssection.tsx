@@ -6,6 +6,8 @@ import card from "../../../public/images/card.png";
 import ButtonLink from "../../components/buttonlink";
 import Card from "../card";
 import ButtonSecondary from "../../components/buttonsecondary";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const news = [
   {
@@ -53,17 +55,39 @@ const NewsSection: FC = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-x-4 ">
-          {news.map((item) => (
-            <Card
-              key={item.title}
-              title={item.title}
-              content={item.content}
-              image={item.image}
-              href={item.href}
-              date={item.date}
-            />
-          ))}
+        <div className="flex w-full flex-col  ">
+          <Swiper
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+            direction="horizontal"
+            className="flex w-full"
+            spaceBetween={50}
+            slidesPerView={3}
+          >
+            {news.map((i) => (
+              <SwiperSlide key={i.title}>
+                <Card
+                  title={i.title}
+                  content={i.content}
+                  date={i.date}
+                  href={i.href}
+                  image={i.image}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
         <div className="self-end">
           <ButtonSecondary href="#">Lihat Semua</ButtonSecondary>

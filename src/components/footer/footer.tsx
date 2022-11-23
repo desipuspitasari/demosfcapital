@@ -26,16 +26,16 @@ const Footer: FC = () => {
           </div>
         </Link>
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-x-7">
-          <div className="flex flex-col col-span-3">
+          <div className="flex flex-col lg:col-span-3">
             <div className="font-bold text-black text-[20px] mt-2">
               PT. Surya Fajar Capital Tbk
             </div>
-            <div className="w-full lg:w-3/4">
+            <div className="w-full lg:w-3/4 mb-5">
               Satrio Tower Building Lt. 14 Unit 5, Jalan Prof. Dr. Satrio Blok
               C4/5, Kuningan, DKI Jakarta 12950, Indonesia
             </div>
           </div>
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col  space-y-2 mb-2">
             {navlist1.map((item) => {
               return (
                 <NavItem href={item.href} key={item.name}>
@@ -44,7 +44,7 @@ const Footer: FC = () => {
               );
             })}
           </div>
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 mb-20">
             {navlist2.map((item) => {
               return (
                 <NavItem href={item.href} key={item.name}>
