@@ -10,6 +10,7 @@ import Footer from "../components/footer/footer";
 import HomeBanner from "../components/banner/homebanner";
 import NewsSection from "../components/section/newssection";
 import ProfilePerusahaan from "../components/banner/profileperusahaan";
+import KonsultasiKeuanganSection from "../components/section/konsultasikeuangansection";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           <HomeBanner />
           <NewsSection />
           <ProfilePerusahaan />
+          <KonsultasiKeuanganSection />
           <Footer />
         </section>
       </main>

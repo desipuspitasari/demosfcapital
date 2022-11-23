@@ -1,5 +1,6 @@
 import { FC } from "react";
 import PortfolioCard from "../portfoliocard";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import sekuritaslogo from "../../../public/images/logo/logo.png";
 import dipaylogo from "../../../public/images/logo/dipaylogo.png";
@@ -46,19 +47,41 @@ const item = [
 
 const PortfolioSection: FC = () => {
   return (
-    <section className="lex pt-32 pb-16 w-full flex-col bg-white">
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6 mx-auto px-4 lg:px-0 place-content-center place-items-center">
-        {item.map((i) => (
-          <PortfolioCard
-            key={i.title}
-            title={i.title}
-            content={i.content}
-            bgcolor={i.bgcolor}
-            image={i.image}
-            href={i.href}
-            logo={i.logo}
-          />
-        ))}
+    <section className="flex pt-32 pb-16 w-full flex-col bg-white">
+      <div className="w-full flex max-w-6xl  mx-auto px-4 lg:px-0 ">
+        <Swiper
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          direction="horizontal"
+          className="flex"
+          spaceBetween={50}
+          slidesPerView={3}
+        >
+          {item.map((i) => (
+            <SwiperSlide key={i.title}>
+              <PortfolioCard
+                image={i.image}
+                title={i.title}
+                href={i.href}
+                logo={i.logo}
+                content={i.content}
+                bgcolor={i.bgcolor}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
