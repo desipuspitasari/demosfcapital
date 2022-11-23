@@ -79,9 +79,6 @@ const HomeHeroSection: FC = () => {
           </div>
           <div className="font-light text-justify">
             <Swiper
-              onSlideChange={(swiper) =>
-                swiper.pagination.bullets.toggleClass("w-12 bg-blue-500")
-              }
               onSwiper={(swiper) => {
                 swiperHeadline.current = swiper;
               }}
@@ -91,6 +88,7 @@ const HomeHeroSection: FC = () => {
               pagination={{
                 el: "#custom-pagination",
                 type: "bullets",
+                bulletActiveClass: "w-12 bg-white/100",
                 bulletClass:
                   "rounded-full transition-all duration-1000 h-2 w-6 bg-gray-300",
                 clickable: true,
