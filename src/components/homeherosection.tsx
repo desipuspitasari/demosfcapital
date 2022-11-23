@@ -54,7 +54,7 @@ const HomeHeroSection: FC = () => {
           return (
             <SwiperSlide
               key={index}
-              className="relative w-full min-h-screen after:absolute after:bg-gradient-to-l after:from-black/80 after:opacity-60 after:group-hover:opacity-100 after:to-black/0 after:inset-0 after:w-full after:h-full duration-1500 after:transition-all "
+              className="relative w-full min-h-screen after:absolute after:bg-gradient-to-l after:from-black/80 after:opacity-60 after:group-hover:opacity-100 after:to-black/0 after:inset-0 after:w-full after:h-full after:transition-opacity duration-1000"
             >
               <Image
                 src={item.img}

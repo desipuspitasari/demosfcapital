@@ -29,6 +29,13 @@ module.exports = {
       transitionDuration: {
         1500: "1500ms",
       },
+      backgroundImage: {
+        noise: 'url("/images/noise.webp")',
+        sekuritas: 'url("/images/sekuritas.png")',
+        dipay: 'url("/images/dipay.png")',
+        indofund: 'url("/images/indofund.png")',
+        pigijo: 'url("/images/pigijo.png")',
+      },
     },
   },
   plugins: [],
