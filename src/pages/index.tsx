@@ -9,6 +9,7 @@ import ButtonLink from "../components/buttonlink";
 import Footer from "../components/footer/footer";
 import HomeBanner from "../components/banner/homebanner";
 import NewsSection from "../components/section/newssection";
+import ProfilePerusahaan from "../components/banner/profileperusahaan";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           <ButtonLink href="#">Button Link</ButtonLink>
           <HomeBanner />
           <NewsSection />
+          <ProfilePerusahaan />
           <Footer />
         </section>
       </main>
