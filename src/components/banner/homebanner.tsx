@@ -8,9 +8,9 @@ import { FC } from "react";
 const HomeBanner: FC = () => {
   return (
     <>
-      <section className="flex py-14 w-full flex-col bg-white">
-        <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-x-6 mx-auto">
-          <div className="flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
+      <section className="flex pt-32 pb-16 w-full flex-col bg-white">
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto px-4 lg:px-0">
+          <div className="order-last md:order-first flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
             <div className="text-[32px] font-black mb-4">Who We Are</div>
             <div>
               PT Surya Fajar Capital Tbk adalah perusahaan investasi dengan
@@ -19,14 +19,14 @@ const HomeBanner: FC = () => {
               perusahaan-perusahaan unggulan.
             </div>
           </div>
-          <div className="max-h-[546px] rounded-xl  rounded-tl-[100px] overflow-hidden max-w-[546px] h-[546px] w-[546px] justify-self-end">
+          <div className="max-h-[546px] rounded-xl  rounded-tl-[100px] overflow-hidden max-w-[546px] justify-self-end">
             <Image src={homebanner} alt="" />
           </div>
         </div>
       </section>
-      <section className="flex py-14 w-full flex-col bg-white">
-        <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-x-6 mx-auto">
-          <div className="max-h-[546px] rounded-xl  rounded-br-[100px] overflow-hidden max-w-[546px] h-[546px] w-[546px]">
+      <section className="flex pb-32 pt-16 w-full flex-col bg-white">
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto px-4 lg:px-0">
+          <div className="max-h-[546px] rounded-xl rounded-br-[100px] overflow-hidden max-w-[546px]">
             <Image src={homebanner2} alt="" />
           </div>
           <div className="flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
@@ -47,7 +47,7 @@ const HomeBanner: FC = () => {
           </div>
         </div>
       </section>
-      <section className="flex py-14 w-full flex-col bg-blue-500">
+      <section className="flex py-28 w-full flex-col bg-noise bg-cover bg-opacity-20">
         <div className="w-full max-w-6xl flex-col flex mx-auto">
           <div className="flex flex-col justify-center text-white font-open-sans text-justify">
             <div className="text-[32px] font-black mb-4">Industry Strategy</div>
