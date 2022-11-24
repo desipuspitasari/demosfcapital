@@ -67,7 +67,7 @@ const event = [
   },
 ];
 
-const SlideContent = ({ items }: any) => {
+const SlideContent: FC<{ items: any }> = ({ items }) => {
   return (
     <>
       <Swiper
