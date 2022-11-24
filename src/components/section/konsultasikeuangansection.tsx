@@ -42,7 +42,7 @@ const news = [
 const KonsultasiKeuanganSection: FC = () => {
   return (
     <section className="flex py-14 w-full flex-col bg-white">
-      <div className="w-full max-w-6xl space-y-8 flex-col flex mx-auto">
+      <div className="w-full max-w-6xl space-y-8 flex-col flex px-4 lg:px-0 mx-auto">
         <div className="flex w-full flex-col  ">
           <Swiper
             breakpoints={{

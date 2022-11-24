@@ -39,9 +39,9 @@ const news = [
 const NewsSection: FC = () => {
   return (
     <section className="flex py-14 w-full flex-col bg-[#F1F1F1]">
-      <div className="w-full max-w-6xl space-y-8 flex-col flex mx-auto">
+      <div className="w-full max-w-6xl space-y-8 flex-col flex mx-auto px-4 lg:px-0">
         <div className="flex text-blue-primary-500 font-open-sans text-justify justify-between gap-x-6">
-          <div className="text-[32px] font-black">
+          <div className="text-[32px] font-black text-left">
             Berita dan Kegiatan Terbaru
           </div>
           <div className="self-end flex space-x-2">
