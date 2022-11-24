@@ -15,6 +15,7 @@ const PortfolioCard: FC<{
     <div
       className={`max-w-[400px] aspect-[7/12] bg-cover bg-no-repeat bg-center rounded-2xl rounded-tr-[100px] flex flex-col justify-end drop-shadow-xl overflow-hidden ${bgcolor}`}
     >
+      <Image src={image} alt="" fill className="object-cover object-top" />
       <div className="aspect-square w-full rounded-xl bg-white p-6 flex-col flex bottom-0 inset-x-0 z-0">
         <Image src={logo} height={48} alt="" className="mb-6" />
         <div className="font-bold text-2xl mb-2">{title}</div>
