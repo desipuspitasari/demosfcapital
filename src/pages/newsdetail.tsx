@@ -1,12 +1,7 @@
 import Head from "next/head";
-import HomeBanner from "../components/banner/homebanner";
 import { NextPage } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer/footer";
-import HomeHeroSection from "../components/homeherosection";
-import PortfolioSection from "../components/section/portfoliosection";
-import Card from "../components/card";
-import card from "../../public/images/card.png";
 import newsdetail from "../../public/images/newsdetail.png";
 import Image from "next/image";
 import NewsSection from "../components/section/newssection";
