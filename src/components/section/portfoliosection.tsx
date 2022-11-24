@@ -52,8 +52,8 @@ const item = [
 
 const PortfolioSection: FC = () => {
   return (
-    <section className="flex pt-32 pb-16 w-full flex-col bg-white">
-      <div className="w-full flex max-w-6xl  mx-auto px-4 lg:px-0 ">
+    <section className="flex pt-32 pb-16 w-full flex-col bg-[#F1F1F1]">
+      <div className="w-full flex max-w-6xl  mx-auto px-4  lg:px-0 ">
         <Swiper
           breakpoints={{
             0: {

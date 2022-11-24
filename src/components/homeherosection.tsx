@@ -18,16 +18,6 @@ const heroBanner = [
       "Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps.",
     img: homehero2,
   },
-  {
-    content:
-      "Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps.",
-    img: homehero2,
-  },
-  {
-    content:
-      "Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps.",
-    img: homehero2,
-  },
 ];
 
 const HomeHeroSection: FC = () => {
@@ -43,7 +33,7 @@ const HomeHeroSection: FC = () => {
         onSwiper={(swiper) => {
           swiperBackground.current = swiper;
         }}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 5000 }}
         speed={1500}
         modules={[Autoplay, Controller]}
         direction="horizontal"
@@ -54,7 +44,7 @@ const HomeHeroSection: FC = () => {
           return (
             <SwiperSlide
               key={index}
-              className="relative w-full min-h-screen after:absolute after:bg-gradient-to-l after:from-black/80 after:opacity-60 after:group-hover:opacity-100 after:to-black/0 after:inset-0 after:w-full after:h-full after:transition-opacity duration-1000"
+              className="relative w-full min-h-screen after:absolute after:bg-gradient-to-l after:from-black/80 after:opacity-60 after:group-hover:opacity-100 after:to-black/0 after:inset-0 after:w-full after:h-full after:transition-opacity duration-2000"
             >
               <Image
                 src={item.img}
