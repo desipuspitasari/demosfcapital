@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { FC } from "react";
 import Image from "next/image";
-import card from "../../public/images/card.png";
-import ButtonLink from "../components/buttonlink";
 
 const KonsultasiCard: FC<{
   logo: any;
