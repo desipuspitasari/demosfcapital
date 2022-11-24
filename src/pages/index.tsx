@@ -32,6 +32,7 @@ export default function Home() {
           <NewsSection />
           <ProfilePerusahaan />
           <KonsultasiKeuanganSection />
+          <ButtonPrimary href="#_">Button Primary</ButtonPrimary>
           <Footer />
         </section>
       </main>

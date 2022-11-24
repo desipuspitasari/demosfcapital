@@ -65,7 +65,6 @@ const PortfolioSection: FC = () => {
             },
           }}
           direction="horizontal"
-          className="flex"
           spaceBetween={50}
           slidesPerView={3}
         >
