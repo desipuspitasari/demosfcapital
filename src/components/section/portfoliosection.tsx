@@ -2,6 +2,11 @@ import { FC } from "react";
 import PortfolioCard from "../portfoliocard";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import sekuritasbg from "../../../public/images/sekuritas.webp";
+import dipaybg from "../../../public/images/dipay.webp";
+import indofundbg from "../../../public/images/indofund.webp";
+import pigijobg from "../../../public/images/pigijo.webp";
+
 import sekuritaslogo from "../../../public/images/logo/logo.png";
 import dipaylogo from "../../../public/images/logo/dipaylogo.png";
 import indofundlogo from "../../../public/images/logo/indofundlogo.png";
@@ -13,8 +18,8 @@ const item = [
     content:
       "Merupakan perusahaan sekuritas bergerak dalam bidang investasi pasar modal bagi ritel maupun korporasi",
     bgcolor: "bg-blue-500",
-    image: "bg-sekuritas",
-    href: "#",
+    image: sekuritasbg,
+    href: "#_",
     logo: sekuritaslogo,
   },
   {
@@ -22,16 +27,16 @@ const item = [
     content:
       "Merupakan perusahaan Fintech yang bergerak dalam sistem pembayaran elektronik/(e-wallet)",
     bgcolor: "bg-sky-500",
-    image: "bg-dipay",
-    href: "#",
+    image: dipaybg,
+    href: "#_",
     logo: dipaylogo,
   },
   {
     title: "PT. Bursa Akselerasi Indonesia",
     content: "Merupakan perusahaan yang bergerak dalam bidang P2P Lending.",
     bgcolor: "bg-orange-500",
-    image: "bg-indofund",
-    href: "#",
+    image: indofundbg,
+    href: "#_",
     logo: indofundlogo,
   },
   {
@@ -39,8 +44,8 @@ const item = [
     content:
       "Perusahaan startup teknologi di bidang pariwisata, yang resmi melantai di Papan Akselerasi PT Bursa Efek lndonesia. Pigijo bercita-cita menjadi marketplace Desa Wisata terbesar di Indonesia.",
     bgcolor: "bg-rose-500",
-    image: "bg-pigijo",
-    href: "#",
+    image: pigijobg,
+    href: "#_",
     logo: pigijologo,
   },
 ];
