@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { FC } from "react";
 import KonsultasiCard from "../konsultasicard";
-import ButtonSecondary from "../../components/buttonsecondary";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import Image from "next/image";
-import sekuritaslogo from "../../public/images/logo/logo.png";
 import ButtonLink from "./buttonlink";
 
 const PortfolioCard: FC<{

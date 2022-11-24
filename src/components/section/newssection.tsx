@@ -1,5 +1,4 @@
 import { FC, Fragment } from "react";
-import ButtonPrimary from "../../components/buttonprimary";
 import { Tab } from "@headlessui/react";
 
 import card from "../../../public/images/card.png";

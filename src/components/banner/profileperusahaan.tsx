@@ -1,7 +1,6 @@
 import Link from "next/link";
 import profileperusahaan from "../../../public/images/profileperusahaan.png";
 import Image from "next/image";
-import ButtonSecondary from "../buttonsecondary";
 import { FC } from "react";
 
 const ProfilePerusahaan: FC = () => {
