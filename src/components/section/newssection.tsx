@@ -1,9 +1,7 @@
-import Link from "next/link";
 import { FC } from "react";
 import ButtonPrimary from "../../components/buttonprimary";
-import Image from "next/image";
+
 import card from "../../../public/images/card.png";
-import ButtonLink from "../../components/buttonlink";
 import Card from "../card";
 import ButtonSecondary from "../../components/buttonsecondary";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -48,7 +46,12 @@ const NewsSection: FC = () => {
           </div>
           <div className="self-end flex space-x-2">
             <div>
-              <ButtonPrimary href="#">Rilis Media</ButtonPrimary>
+              <ButtonPrimary
+                href="#_"
+                onClick={() => console.log("rilis media")}
+              >
+                Rilis Media
+              </ButtonPrimary>
             </div>
             <div>
               <ButtonPrimary href="#">Internal</ButtonPrimary>
@@ -76,8 +79,8 @@ const NewsSection: FC = () => {
             spaceBetween={50}
             slidesPerView={3}
           >
-            {news.map((i) => (
-              <SwiperSlide key={i.title}>
+            {news.map((i, index) => (
+              <SwiperSlide key={index}>
                 <Card
                   title={i.title}
                   content={i.content}

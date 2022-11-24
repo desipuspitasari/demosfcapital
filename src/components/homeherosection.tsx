@@ -88,9 +88,8 @@ const HomeHeroSection: FC = () => {
               pagination={{
                 el: "#custom-pagination",
                 type: "bullets",
-                bulletActiveClass: "w-12 bg-white/100",
-                bulletClass:
-                  "rounded-full transition-all duration-1000 h-2 w-6 bg-gray-300",
+                bulletClass: "swiper-bullet",
+                bulletActiveClass: "swiper-bullet-active",
                 clickable: true,
               }}
             >

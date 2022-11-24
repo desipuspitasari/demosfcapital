@@ -6,9 +6,9 @@ import SwicthLanguage from "./switchlanguage";
 import MenuButton from "./MenuButton";
 
 const navlist = [
-  { name: "Tentang Kami", href: "#" },
+  { name: "Tentang Kami", href: "#_" },
   { name: "Produk & layanan", href: "#" },
-  { name: "Berita & Kegiatan", href: "#" },
+  { name: "Berita & Kegiatan", href: "newsandevent" },
   { name: "Hubungan Investor", href: "#" },
   { name: "Kontak", href: "#" },
 ];
