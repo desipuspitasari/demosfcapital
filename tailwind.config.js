@@ -35,6 +35,7 @@ module.exports = {
         dipay: 'url("/images/dipay.webp")',
         indofund: 'url("/images/indofund.webp")',
         pigijo: 'url("/images/pigijo.webp")',
+        about: 'url("/images/about.webp")',
       },
     },
   },
