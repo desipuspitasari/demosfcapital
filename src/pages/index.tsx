@@ -3,8 +3,10 @@ import Image from "next/image";
 import Navbar from "../components/navbar";
 import LinkBtnPrimary from "../components/linkbtnprimary";
 import BtnPrimary from "../components/btnprimary";
+import BtnSecondary from "../components/btnsecondary";
 import LinkBtnOutline from "../components/linkbtnoutline";
-import ButtonSecondary from "../components/linkbtnsecondary";
+import LinkBtnSecondary from "../components/linkbtnsecondary";
+import BtnOutline from "../components/btnoutline";
 import LinkText from "../components/linktext";
 import Footer from "../components/footer/footer";
 import HomeBanner from "../components/section/home/homebanner";
@@ -27,10 +29,12 @@ export default function Home() {
           <div className="flex py-40">
             <LinkBtnPrimary href="#">Link Btn Primary</LinkBtnPrimary>
             <LinkBtnOutline href="#">Link Btn Outline</LinkBtnOutline>
-            <ButtonSecondary href="#">Button Secondary</ButtonSecondary>
+            <LinkBtnSecondary href="#">Link Btn Secondary</LinkBtnSecondary>
             <BtnPrimary onClick={() => console.log("hai")}>
               Button Primary
             </BtnPrimary>
+            <BtnSecondary>Button Sec</BtnSecondary>
+            <BtnOutline>Button Outline</BtnOutline>
             <LinkText href="#">Link Text</LinkText>
           </div>
           <HomeBanner />
