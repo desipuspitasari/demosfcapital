@@ -7,10 +7,11 @@ import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { FiArrowUpRight } from "react-icons/fi";
 import StrukturPerusahaan from "../components/section/about/strukturperusahaan";
+import StrukturOrganisasi from "../components/section/about/strukturorganisasi";
 
 const tablists = [
-  { name: "A", content: <StrukturPerusahaan /> },
-  { name: "B", content: <StrukturPerusahaan /> },
+  { name: "Struktur Perusahaan", content: <StrukturPerusahaan /> },
+  { name: "Struktur Organisasi", content: <StrukturOrganisasi /> },
 ];
 
 const About: NextPage = () => {

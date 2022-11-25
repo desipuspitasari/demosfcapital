@@ -30,7 +30,7 @@ module.exports = {
         1500: "1500ms",
       },
       backgroundImage: {
-        noise: 'url("/images/noise.webp")',
+        noise: 'url("/images/noise3.webp")',
         sekuritas: 'url("/images/sekuritas.webp")',
         dipay: 'url("/images/dipay.webp")',
         indofund: 'url("/images/indofund.webp")',
