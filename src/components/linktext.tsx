@@ -3,7 +3,10 @@ import ButtonArrow from "./buttonarrow";
 import { FC } from "react";
 import { ReactNode } from "react";
 
-const ButtonLink = ({ href, children }: { href: any; children: ReactNode }) => {
+const LinkText: FC<{
+  href: any;
+  children: ReactNode;
+}> = ({ href, children }) => {
   return (
     <Link
       href={href}
@@ -15,4 +18,4 @@ const ButtonLink = ({ href, children }: { href: any; children: ReactNode }) => {
   );
 };
 
-export default ButtonLink;
+export default LinkText;

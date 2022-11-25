@@ -3,7 +3,7 @@ import Image from "next/image";
 import NavItem from "./navitem";
 import Link from "next/link";
 import SwicthLanguage from "./switchlanguage";
-import MenuButton from "./MenuButton";
+import MenuButton from "./menubutton";
 
 const navlist = [
   { name: "Tentang Kami", href: "#_" },

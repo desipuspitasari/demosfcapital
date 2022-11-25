@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .swiper-bullet {
-  @apply w-6 h-2 rounded-full bg-gray-400 transition-all duration-1000 cursor-pointer;
+  @apply w-6 h-2 rounded-full bg-gray-400 transition-all duration-1000 cursor-pointer drop-shadow;
 }
 
 .swiper-bullet-active {

@@ -3,9 +3,9 @@ import { Autoplay, Controller, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
-import ButtonOutline from "./buttonoutline";
-import homehero1 from "../../public/images/homehero1.jpeg";
-import homehero2 from "../../public/images/homehero2.jpeg";
+import ButtonOutline from "../../linkbtnoutline";
+import homehero1 from "../../../../public/images/homehero1.jpeg";
+import homehero2 from "../../../../public/images/homehero2.jpeg";
 
 const heroBanner = [
   {

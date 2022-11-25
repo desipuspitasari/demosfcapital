@@ -3,7 +3,7 @@ import ButtonArrow from "./buttonarrow";
 import { FC } from "react";
 import { ReactNode } from "react";
 
-const ButtonSecondary: FC<{ href: any; children: ReactNode }> = ({
+const LinkBtnSecondary: FC<{ href: any; children: ReactNode }> = ({
   href,
   children,
 }: any) => {
@@ -18,4 +18,4 @@ const ButtonSecondary: FC<{ href: any; children: ReactNode }> = ({
   );
 };
 
-export default ButtonSecondary;
+export default LinkBtnSecondary;
