@@ -1,11 +1,11 @@
 import Head from "next/head";
-import HomeBanner from "../components/banner/homebanner";
+import HomeBanner from "../components/section/home/homebanner";
 import { NextPage } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer/footer";
-import HomeHeroSection from "../components/homeherosection";
-import PortfolioSection from "../components/section/portfoliosection";
-import NewsSection from "../components/section/newssection";
+import HomeHeroSection from "../components/section/home/homeherosection";
+import PortfolioSection from "../components/section/home/portfoliosection";
+import NewsSection from "../components/section/home/newssection";
 
 const Home: NextPage = () => {
   return (

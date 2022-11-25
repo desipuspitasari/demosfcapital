@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer/footer";
 import newsdetail from "../../public/images/newsdetail.png";
 import Image from "next/image";
-import NewsSection from "../components/section/newssection";
+import NewsSection from "../components/section/home/newssection";
 
 const NewsDetail: NextPage = () => {
   return (

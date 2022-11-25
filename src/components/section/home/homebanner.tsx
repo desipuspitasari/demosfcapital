@@ -1,8 +1,8 @@
 import Link from "next/link";
-import homebanner from "../../../public/images/homebanner.png";
-import homebanner2 from "../../../public/images/homebanner2.png";
+import homebanner from "../../../../public/images/homebanner.png";
+import homebanner2 from "../../../../public/images/homebanner2.png";
 import Image from "next/image";
-import ButtonSecondary from "../../components/buttonsecondary";
+import ButtonSecondary from "../../linkbtnsecondary";
 import { FC } from "react";
 
 const HomeBanner: FC = () => {

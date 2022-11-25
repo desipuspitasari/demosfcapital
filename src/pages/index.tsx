@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import ButtonPrimary from "../components/buttonprimary";
-import ButtonOutline from "../components/buttonoutline";
-import ButtonArrow from "../components/buttonarrow";
-import ButtonSecondary from "../components/buttonsecondary";
-import ButtonLink from "../components/buttonlink";
+import LinkBtnPrimary from "../components/linkbtnprimary";
+import BtnPrimary from "../components/btnprimary";
+import LinkBtnOutline from "../components/linkbtnoutline";
+import ButtonSecondary from "../components/linkbtnsecondary";
+import LinkText from "../components/linktext";
 import Footer from "../components/footer/footer";
-import HomeBanner from "../components/banner/homebanner";
-import NewsSection from "../components/section/newssection";
+import HomeBanner from "../components/section/home/homebanner";
+import NewsSection from "../components/section/home/newssection";
 import ProfilePerusahaan from "../components/banner/profileperusahaan";
 import KonsultasiKeuanganSection from "../components/section/konsultasikeuangansection";
 
@@ -24,15 +24,19 @@ export default function Home() {
       <main className="min-h-screen w-full bg-[#005eeead]">
         <Navbar />
         <section className="py-20 flex flex-col h-full w-full">
-          <ButtonPrimary href="#">Button Primary</ButtonPrimary>
-          <ButtonOutline href="#"> Button Outline</ButtonOutline>
-          <ButtonSecondary href="#">Button Secondary</ButtonSecondary>
-          <ButtonLink href="#">Button Link</ButtonLink>
+          <div className="flex py-40">
+            <LinkBtnPrimary href="#">Link Btn Primary</LinkBtnPrimary>
+            <LinkBtnOutline href="#">Link Btn Outline</LinkBtnOutline>
+            <ButtonSecondary href="#">Button Secondary</ButtonSecondary>
+            <BtnPrimary onClick={() => console.log("hai")}>
+              Button Primary
+            </BtnPrimary>
+            <LinkText href="#">Link Text</LinkText>
+          </div>
           <HomeBanner />
           <NewsSection />
           <ProfilePerusahaan />
           <KonsultasiKeuanganSection />
-          <ButtonPrimary href="#_">Button Primary</ButtonPrimary>
           <Footer />
         </section>
       </main>

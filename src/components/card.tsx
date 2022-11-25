@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import Image from "next/image";
-import ButtonLink from "../components/buttonlink";
+import ButtonLink from "./linktext";
 
 const Card: FC<{
   title: string;
@@ -13,7 +13,15 @@ const Card: FC<{
   return (
     <div className="bg-white pb-6 h-full border p-4 rounded-xl rounded-br-[70px] drop-shadow-xl w-full ">
       <div className="w-full  overflow-hidden rounded-2xl aspect-square relative">
-        <Image fill src={image} alt="" />
+        <Image
+          fill
+          src={image}
+          alt=""
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          className="object-cover"
+        />
       </div>
       <div className="text-blue-primary-500 text-2xl font-black">{title}</div>
       <div className="mt-2">{content}</div>

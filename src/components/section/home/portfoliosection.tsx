@@ -1,16 +1,16 @@
 import { FC } from "react";
-import PortfolioCard from "../portfoliocard";
+import PortfolioCard from "../../portfoliocard";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import sekuritasbg from "../../../public/images/sekuritas.webp";
-import dipaybg from "../../../public/images/dipay.webp";
-import indofundbg from "../../../public/images/indofund.webp";
-import pigijobg from "../../../public/images/pigijo.webp";
+import sekuritasbg from "../../../../public/images/sekuritas.webp";
+import dipaybg from "../../../../public/images/dipay.webp";
+import indofundbg from "../../../../public/images/indofund.webp";
+import pigijobg from "../../../../public/images/pigijo.webp";
 
-import sekuritaslogo from "../../../public/images/logo/logo.png";
-import dipaylogo from "../../../public/images/logo/dipaylogo.png";
-import indofundlogo from "../../../public/images/logo/indofundlogo.png";
-import pigijologo from "../../../public/images/logo/pigijologo.png";
+import sekuritaslogo from "../../../../public/images/logo/logo.png";
+import dipaylogo from "../../../../public/images/logo/dipaylogo.png";
+import indofundlogo from "../../../../public/images/logo/indofundlogo.png";
+import pigijologo from "../../../../public/images/logo/pigijologo.png";
 
 const item = [
   {
@@ -72,6 +72,7 @@ const PortfolioSection: FC = () => {
           direction="horizontal"
           spaceBetween={50}
           slidesPerView={3}
+          className="!py-6 !px-4"
         >
           {item.map((i) => (
             <SwiperSlide key={i.title}>

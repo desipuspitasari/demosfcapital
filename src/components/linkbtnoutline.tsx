@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { FC } from "react";
 import { ReactNode } from "react";
 
-const ButtonOutline: FC<{ href: any; children: ReactNode }> = ({
+const LinkBtnOutline: FC<{ href: any; children: ReactNode }> = ({
   href,
   children,
 }) => {
@@ -20,4 +20,4 @@ const ButtonOutline: FC<{ href: any; children: ReactNode }> = ({
   );
 };
 
-export default ButtonOutline;
+export default LinkBtnOutline;
