@@ -10,12 +10,14 @@ import ProfilePerusahaan from "../components/section/about/profileperusahaan";
 import StrukturPerusahaan from "../components/section/about/strukturperusahaan";
 import StrukturOrganisasi from "../components/section/about/strukturorganisasi";
 import Manajemen from "../components/section/about/manajemen";
+import TatakelolaPerusahaan from "../components/section/about/tatakelolaperusahaan";
 
 const tablists = [
   { name: "Profile Perusahaan", content: <ProfilePerusahaan /> },
   { name: "Struktur Perusahaan", content: <StrukturPerusahaan /> },
   { name: "Struktur Organisasi", content: <StrukturOrganisasi /> },
   { name: "Manajemen Perusahaan", content: <Manajemen /> },
+  { name: "Tata Kelola Perusahaan", content: <TatakelolaPerusahaan /> },
 ];
 
 const About: NextPage = () => {

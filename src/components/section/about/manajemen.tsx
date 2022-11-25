@@ -27,11 +27,6 @@ const news = [
 const Manajemen = () => {
   return (
     <>
-      <Head>
-        <title>SF Capital</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-
       <section className="w-full bg-white relative flex flex-col mt-20 ">
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto px-4 lg:px-0">
           {news.map((i) => (

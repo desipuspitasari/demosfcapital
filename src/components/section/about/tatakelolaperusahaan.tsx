@@ -4,7 +4,17 @@ import tatakelolaitem from "./tatakelolaitem";
 
 const TatakelolaPerusahaan = () => {
   return (
-    <div className="flex flex-col w-full space-y-4">
+    <div className="flex flex-col w-full space-y-4 my-20">
+      <div className="text-4xl text-center mb-6 font-bold">
+        Tata Kelola Perusahaan
+      </div>
+      <div className="text-justify pb-6">
+        Penerapan Tata Kelola Perusahaan yang baik atau Good Corporate
+        Governance merupakan bentuk upaya dari Perseroan untuk membangun suatu
+        organisasi yang memiliki aturan, praktik, dan proses pengendalian yang
+        baik antar pemangku kepentingan yang bertujuan untuk meningkatkan nilai
+        perusahaan.
+      </div>
       {tatakelolaitem.map((item, index) => {
         return (
           <Disclosure
