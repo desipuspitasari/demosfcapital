@@ -6,11 +6,16 @@ import Footer from "../components/footer/footer";
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import { FiArrowUpRight } from "react-icons/fi";
+import ProfilePerusahaan from "../components/section/about/profileperusahaan";
 import StrukturPerusahaan from "../components/section/about/strukturperusahaan";
+import StrukturOrganisasi from "../components/section/about/strukturorganisasi";
+import Manajemen from "../components/section/about/manajemen";
 
 const tablists = [
-  { name: "A", content: <StrukturPerusahaan /> },
-  { name: "B", content: <StrukturPerusahaan /> },
+  { name: "Profile Perusahaan", content: <ProfilePerusahaan /> },
+  { name: "Struktur Perusahaan", content: <StrukturPerusahaan /> },
+  { name: "Struktur Organisasi", content: <StrukturOrganisasi /> },
+  { name: "Manajemen Perusahaan", content: <Manajemen /> },
 ];
 
 const About: NextPage = () => {
@@ -22,8 +27,8 @@ const About: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
-        <section className="max-h-[500px] min-h-[500px] flex flex-col px-2 pb-4 justify-end  w-full bg-about bg-cover bg-left">
-          <div className="w-full max-w-6xl flex flex-col mx-auto">
+        <section className="max-h-[500px] min-h-[500px] flex flex-col px-2 pb-4 justify-end  w-full bg-about bg-cover  bg-left">
+          <div className="w-full max-w-6xl flex flex-col mx-auto ">
             <div className="font-bold text-white text-[40px] ">
               Tentang Kami
             </div>
@@ -47,7 +52,7 @@ const About: NextPage = () => {
             </Tab.List>
           </div>
         </section>
-        <Tab.Panels as="section" className="w-full max-w-6xl px-2 mx-auto">
+        <Tab.Panels as="section" className="w-full max-w-6xl px-2 mx-auto ">
           {tablists.map((item, index) => (
             <Tab.Panel key={index}>{item.content}</Tab.Panel>
           ))}
