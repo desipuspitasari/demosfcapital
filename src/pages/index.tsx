@@ -11,7 +11,7 @@ import LinkText from "../components/linktext";
 import Footer from "../components/footer/footer";
 import HomeBanner from "../components/section/home/homebanner";
 import NewsSection from "../components/section/home/newssection";
-import ProfilePerusahaan from "../components/banner/profileperusahaan";
+import ProfilePerusahaan from "../components/section/about/profileperusahaan";
 import KonsultasiKeuanganSection from "../components/section/konsultasikeuangansection";
 
 export default function Home() {
