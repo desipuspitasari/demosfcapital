@@ -1,22 +1,22 @@
-import { NextPage } from "next";
 import Head from "next/head";
-
+import { NextPage } from "next";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer/footer";
-import PSContentSection from "../components/section/productsandservices/pscontentsection";
+import InvContentSection from "../components/section/investor/invcontentsection";
 
-const ProductAndServices: NextPage = () => {
+const About: NextPage = () => {
   return (
-    <div className="bg-noise2 bg-no-repeat bg-cover">
+    <>
       <Head>
         <title>SF Capital</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <PSContentSection />
+
+      <InvContentSection />
       <Footer />
       <Navbar />
-    </div>
+    </>
   );
 };
 
-export default ProductAndServices;
+export default About;
