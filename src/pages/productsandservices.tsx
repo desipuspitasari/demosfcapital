@@ -1,22 +1,22 @@
-import Head from "next/head";
 import { NextPage } from "next";
+import Head from "next/head";
 
 import Navbar from "../components/navbar";
 import Footer from "../components/footer/footer";
-import NEContentSection from "../components/section/newsandevent/necontentsection";
+import PSContentSection from "../components/section/productsandservices/pscontentsection";
 
-const NewsAndEvent: NextPage = () => {
+const ProductAndServices: NextPage = () => {
   return (
     <>
       <Head>
         <title>SF Capital</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <NEContentSection />
+      <PSContentSection />
       <Footer />
       <Navbar />
     </>
   );
 };
 
-export default NewsAndEvent;
+export default ProductAndServices;
