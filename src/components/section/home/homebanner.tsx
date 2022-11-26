@@ -47,7 +47,7 @@ const HomeBanner: FC = () => {
           </div>
         </div>
       </section>
-      <section className="flex py-28 w-full flex-col bg-noise bg-cover bg-opacity-20">
+      <section className="flex py-28 w-full flex-col bg-noise1 bg-cover bg-opacity-20">
         <div className="w-full max-w-6xl flex-col flex mx-auto px-4 lg:px-0">
           <div className="flex flex-col justify-center text-white font-open-sans text-justify">
             <div className="text-[32px] font-black mb-4">Industry Strategy</div>

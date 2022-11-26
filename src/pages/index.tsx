@@ -12,7 +12,7 @@ import Footer from "../components/footer/footer";
 import HomeBanner from "../components/section/home/homebanner";
 import NewsSection from "../components/section/home/newssection";
 import ProfilePerusahaan from "../components/section/about/profileperusahaan";
-import KonsultasiKeuanganSection from "../components/section/konsultasikeuangansection";
+import KonsultasiKeuanganSection from "../components/section/productsandservices/konsultasikeuangansection";
 
 export default function Home() {
   return (
