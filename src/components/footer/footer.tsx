@@ -1,13 +1,13 @@
 import Link from "next/link";
 import logo from "../../../public/images/logo/logo.png";
 import Image from "next/image";
-import NavItem from "../navitem";
+import NavItem from "./navitem";
 import { FC } from "react";
 
 const navlist1 = [
-  { name: "Tentang Kami", href: "#" },
-  { name: "Produk & Layanan", href: "#" },
-  { name: "Berita & Pengumuman", href: "#" },
+  { name: "Tentang Kami", href: "about" },
+  { name: "Produk & Layanan", href: "productsandservices" },
+  { name: "Berita & Pengumuman", href: "newsandevent" },
 ];
 
 const navlist2 = [
@@ -17,8 +17,8 @@ const navlist2 = [
 
 const Footer: FC = () => {
   return (
-    <section className="flex py-14">
-      <div className="max-w-6xl w-full px-10 py-8 mx-auto bg-white flex flex-col rounded-[32px] shadow-[0_14px_64px_rgba(24,39,75,0.12)]">
+    <section className="flex py-14 w-full px-2">
+      <div className="max-w-6xl w-full px-10 py-8 mx-auto bg-white border flex flex-col rounded-[32px] shadow-[0_7px_14px_rgba(24,39,75,0.12)]">
         <Link href="#_" className="flex flex-wrap items-center space-x-2">
           <Image src={logo} height={48} width={48} alt="" />
           <div className="text-blue-primary-400 font-bold text-[22px] font-poppins">

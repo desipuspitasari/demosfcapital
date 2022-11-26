@@ -1,6 +1,6 @@
 import logo from "../../public/images/logo/logo.png";
 import Image from "next/image";
-import NavItem from "./navitem";
+import NavItem from "./footer/navitem";
 import Link from "next/link";
 import SwicthLanguage from "./switchlanguage";
 import MenuButton from "./menubutton";
@@ -9,7 +9,7 @@ const navlist = [
   { name: "Tentang Kami", href: "about" },
   { name: "Produk & layanan", href: "productsandservices" },
   { name: "Berita & Kegiatan", href: "newsandevent" },
-  { name: "Hubungan Investor", href: "#" },
+  { name: "Hubungan Investor", href: "investor" },
   { name: "Kontak", href: "#" },
 ];
 

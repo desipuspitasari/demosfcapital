@@ -4,14 +4,14 @@ import KonsultasiKeuanganSection from "./konsultasikeuangansection";
 const PSContentSection: FC = () => {
   return (
     <>
-      <section className="w-full max-h-[500px] min-h-[500px] flex flex-col justify-end bg-productsandservices bg-cover bg-no-repeat bg-center">
+      <section className="w-full max-h-[500px] min-h-[500px] flex flex-col justify-end bg-productsandservices bg-cover bg-no-repeat bg-center px-2">
         <div className="max-w-6xl w-full mx-auto mb-20">
           <div className="text-[40px] text-white font-bold">
             Produk & Layanan
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen bg-noise2 bg-cover bg-no-repeat bg-top">
+      <section className="w-full min-h-screen px-2">
         <div className="w-full max-w-6xl mx-auto flex flex-col py-20">
           <div className="text-center text-white text-[32px] font-bold mb-2">
             Industry Expertise
