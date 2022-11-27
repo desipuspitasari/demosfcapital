@@ -39,6 +39,7 @@ module.exports = {
         about: 'url("/images/about.webp")',
         newsandevent: 'url("/images/newsandevent.webp")',
         productsandservices: 'url("/images/productsandservices.webp")',
+        contact: 'url("/images/contact.webp")',
       },
     },
   },
