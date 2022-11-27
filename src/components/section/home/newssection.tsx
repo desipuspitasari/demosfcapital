@@ -74,7 +74,7 @@ const NewsSection: FC = () => {
     >
       <div className="w-full max-w-6xl space-y-8 flex-col flex mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 text-blue-primary-500 font-open-sans">
-          <div className="text-[32px] font-black mb-2">
+          <div className="text-[32px] font-bold mb-2">
             Berita dan Kegiatan Terbaru
           </div>
           <Tab.List

@@ -11,7 +11,7 @@ const HomeBanner: FC = () => {
       <section className="flex pt-32 pb-16 w-full flex-col bg-white">
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto px-4 lg:px-0">
           <div className="order-last md:order-first flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
-            <div className="text-[32px] font-black mb-4">Who We Are</div>
+            <div className="text-[32px] font-bold mb-4">Who We Are</div>
             <div>
               PT Surya Fajar Capital Tbk adalah perusahaan investasi dengan
               keahlian serta pengalaman di Indonesia dengan perjalanan yang kuat
@@ -30,7 +30,7 @@ const HomeBanner: FC = () => {
             <Image src={homebanner2} alt="" />
           </div>
           <div className="flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
-            <div className="text-[32px] font-black mb-4">What We Do</div>
+            <div className="text-[32px] font-bold mb-4">What We Do</div>
             <div className="mb-4">
               Fokus kami pada jasa konsultasi keuangan serta berinvestsai pada
               perusahaan yang memiliki potensi pertumbuhan dengan meningkatkan
@@ -50,7 +50,7 @@ const HomeBanner: FC = () => {
       <section className="flex py-28 w-full flex-col bg-noise1 bg-cover bg-opacity-20">
         <div className="w-full max-w-6xl flex-col flex mx-auto px-4 lg:px-0">
           <div className="flex flex-col justify-center text-white font-open-sans text-justify">
-            <div className="text-[32px] font-black mb-4">Industry Strategy</div>
+            <div className="text-[32px] font-bold mb-4">Industry Strategy</div>
             <div className="mb-5">
               Kami percaya bahwa Indonesia memiliki peluang untuk mengembangkan
               potensi dalam dunia investasi kedepannya. PT Surya Fajar Capital
@@ -71,9 +71,7 @@ const HomeBanner: FC = () => {
               mengidentifikasi potensi usaha suatu perusahaan agar dapat
               berkembang lebih maksimal.
             </div>
-            <div className="text-[32px] font-black mb-4">
-              Industry Expertise
-            </div>
+            <div className="text-[32px] font-bold mb-4">Industry Expertise</div>
             <div className="mb-5">
               Kami berupaya dalam membantu perusahaan untuk mewujudkan potensi
               pertumbuhan mereka. Kami percaya dalam keahlian profesional tim

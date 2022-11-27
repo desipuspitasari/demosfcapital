@@ -3,11 +3,13 @@ import { Tab } from "@headlessui/react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 import KeuanganContent from "./keuangancontent";
+import KeterbukaanInformasiContent from "./keterbukaaninformasicontent";
+import InformasiSahamContent from "./informasisahamcontent";
 
 const tablists = [
   { name: "Keuangan", content: <KeuanganContent /> },
-  { name: "Keterbukaan Informasi", content: "" },
-  { name: "Informasi Saham", content: "" },
+  { name: "Keterbukaan Informasi", content: <KeterbukaanInformasiContent /> },
+  { name: "Informasi Saham", content: <InformasiSahamContent /> },
 ];
 
 const InvContentSection: FC = () => {
