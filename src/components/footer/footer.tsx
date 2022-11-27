@@ -11,7 +11,7 @@ const navlist1 = [
 ];
 
 const navlist2 = [
-  { name: "Hubungan Investor", href: "#" },
+  { name: "Hubungan Investor", href: "investor" },
   { name: "Kontak", href: "#" },
 ];
 
@@ -19,7 +19,7 @@ const Footer: FC = () => {
   return (
     <section className="flex py-14 w-full px-2">
       <div className="max-w-6xl w-full px-10 py-8 mx-auto bg-white border flex flex-col rounded-[32px] shadow-[0_7px_14px_rgba(24,39,75,0.12)]">
-        <Link href="#_" className="flex flex-wrap items-center space-x-2">
+        <Link href="/" className="flex flex-wrap items-center space-x-2">
           <Image src={logo} height={48} width={48} alt="" />
           <div className="text-blue-primary-400 font-bold text-[22px] font-poppins">
             CAPITAL
