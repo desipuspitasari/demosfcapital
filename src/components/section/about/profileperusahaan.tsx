@@ -7,9 +7,9 @@ const ProfilePerusahaan: FC = () => {
   return (
     <>
       <section className="flex py-14 w-full flex-col bg-[white]">
-        <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-x-6 px-4 lg:px-0 mx-auto ">
+        <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-x-6 px-4 lg:px-0 mx-auto">
           <div className="flex flex-col justify-center order-last md:order-first text-blue-primary-500  font-open-sans text-justify">
-            <div className="text-[32px] font-black mb-4">Profil Perusahaan</div>
+            <div className="text-[32px] font-bold mb-4">Profil Perusahaan</div>
             <div className="mb-4">
               Didirikan pada akhir tahun 2016, Perseroan awalnya bergerak di
               bidang jasa konsultasi keuangan dengan tujuan memberikan solusi

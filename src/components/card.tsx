@@ -23,7 +23,7 @@ const Card: FC<{
           className="object-cover"
         />
       </div>
-      <div className="text-blue-primary-500 text-2xl font-black">{title}</div>
+      <div className="text-blue-primary-500 text-2xl font-bold">{title}</div>
       <div className="mt-2">{content}</div>
       <div className="text-sm text-neutral-300 mt-2">{date}</div>
       <div className="py-2 mt-2 flex">
