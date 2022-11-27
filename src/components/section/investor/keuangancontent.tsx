@@ -27,11 +27,11 @@ const KeuanganContent: FC = () => {
     tahun;
   }, [jenisDokumen, tahun]);
   return (
-    <div className="flex bg-white w-full flex-col rounded-xl">
-      <div className="flex w-full justify-between items-center flex-wrap mb-10">
+    <div className="flex w-full flex-col rounded-xl bg-white">
+      <div className="mb-10 flex w-full flex-wrap items-center justify-between">
         {/* Laporan Dropdown */}
         <div className="text-blue-primary text-[32px] font-bold">Report</div>
-        <div className="flex flex-wrap relative gap-4">
+        <div className="relative flex flex-wrap gap-4">
           {/* Dropdown Jenis Dokumen */}
           <Listbox
             as={Fragment}
@@ -40,7 +40,7 @@ const KeuanganContent: FC = () => {
           >
             {({ open }) => (
               <div className="relative mt-1">
-                <Listbox.Button className="max-w-xs w-[20rem] py-2 px-6 border rounded-full relative flex items-center justify-between">
+                <Listbox.Button className="relative flex w-[20rem] max-w-xs items-center justify-between rounded-full border py-2 px-6">
                   <span className="block truncate">
                     {jenisDokumen == null
                       ? "Jenis Dokumen"
@@ -61,7 +61,7 @@ const KeuanganContent: FC = () => {
                   leaveTo="opacity-0"
                 >
                   <Listbox.Options
-                    className={`absolute z-10 mt-1 max-h-56 overflow-auto rounded-xl w-full border`}
+                    className={`absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-xl border`}
                   >
                     {listjenisdokumen.map((item, index) => (
                       <Listbox.Option
@@ -71,7 +71,7 @@ const KeuanganContent: FC = () => {
                           `cursor-pointer select-none py-2 px-6 font-medium  ${
                             selected
                               ? "bg-slate-300 text-blue-primary-500"
-                              : "hover:bg-slate-200 bg-white"
+                              : "bg-white hover:bg-slate-200"
                           }`
                         }
                       >
@@ -89,7 +89,7 @@ const KeuanganContent: FC = () => {
           <Listbox as={Fragment} value={tahun} onChange={setTahun}>
             {({ open }) => (
               <div className="relative mt-1">
-                <Listbox.Button className="max-w-[14rem] w-[14rem] py-2 px-6 border rounded-full relative flex items-center justify-between">
+                <Listbox.Button className="relative flex w-[14rem] max-w-[14rem] items-center justify-between rounded-full border py-2 px-6">
                   <span className="block truncate">
                     {tahun == null ? "Tahun" : tahun["name"]}
                   </span>
@@ -108,7 +108,7 @@ const KeuanganContent: FC = () => {
                   leaveTo="opacity-0"
                 >
                   <Listbox.Options
-                    className={`absolute z-10 mt-1 max-h-56 overflow-auto rounded-xl w-full border`}
+                    className={`absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-xl border`}
                   >
                     {listtahun.map((item, index) => (
                       <Listbox.Option
@@ -118,7 +118,7 @@ const KeuanganContent: FC = () => {
                           `cursor-pointer select-none py-2 px-6 font-medium  ${
                             selected
                               ? "bg-slate-300 text-blue-primary-500"
-                              : "hover:bg-slate-200 bg-white"
+                              : "bg-white hover:bg-slate-200"
                           }`
                         }
                       >
@@ -135,9 +135,9 @@ const KeuanganContent: FC = () => {
         {/* Laporan Dropdown */}
       </div>
       {/* Table */}
-      <div className="flex w-full bg-white border rounded-xl p-4 shadow-xl">
-        <div className=" w-full h-full bg-white rounded-xl overflow-clip overflow-x-auto border">
-          <table className="table-auto w-full divide-y">
+      <div className="flex w-full rounded-xl border bg-white p-4 shadow-xl">
+        <div className=" h-full w-full overflow-clip overflow-x-auto rounded-xl border bg-white">
+          <table className="w-full table-auto divide-y">
             <thead>
               <tr>
                 <th>Tanggal</th>
