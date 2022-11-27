@@ -6,9 +6,17 @@
 @tailwind utilities;
 
 .swiper-bullet {
-  @apply w-6 h-2 rounded-full bg-gray-400 transition-all duration-700 cursor-pointer drop-shadow;
+  @apply w-6 h-2 rounded-full bg-gray-400 transition-all duration-700 cursor-pointer drop-shadow will-change-auto;
 }
 
 .swiper-bullet-active {
   @apply w-10 bg-white;
+}
+
+tr {
+  @apply h-14;
+}
+
+table thead tr {
+  @apply bg-[#E5E5EA];
 }
