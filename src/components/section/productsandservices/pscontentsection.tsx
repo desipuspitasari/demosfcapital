@@ -4,31 +4,31 @@ import KonsultasiKeuanganSection from "./konsultasikeuangansection";
 const PSContentSection: FC = () => {
   return (
     <>
-      <section className="w-full max-h-[500px] min-h-[500px] flex flex-col justify-end bg-productsandservices bg-cover bg-no-repeat bg-center px-2">
-        <div className="max-w-6xl w-full mx-auto mb-20">
-          <div className="text-[40px] text-white font-bold">
+      <section className="flex max-h-[500px] min-h-[500px] w-full flex-col justify-end bg-productsandservices bg-cover bg-center bg-no-repeat px-2">
+        <div className="mx-auto mb-20 w-full max-w-6xl">
+          <div className="text-[40px] font-bold text-white">
             Produk & Layanan
           </div>
         </div>
       </section>
-      <section className="w-full min-h-screen px-2">
-        <div className="w-full max-w-6xl mx-auto flex flex-col py-20">
-          <div className="text-center text-white text-[32px] font-bold mb-2">
+      <section className="min-h-screen w-full px-2">
+        <div className="mx-auto flex w-full max-w-6xl flex-col py-20">
+          <div className="mb-2 text-center text-[32px] font-bold text-white">
             Industry Expertise
           </div>
-          <div className="text-white text-justify mb-10">
+          <div className="mb-10 text-justify text-white">
             Kami berupaya dalam membantu perusahaan untuk mewujudkan potensi
             pertumbuhan mereka. Kami percaya dalam keahlian profesional tim kami
             mampu berkolaborasi erat dengan mitra kami termasuk pengusaha,
             substansi pemerintah serta tim manajemen di perusahaan yang terdapat
             dalam portofolio kami.
           </div>
-          <div className="text-white text-center mb-6">
+          <div className="mb-6 text-center text-white">
             Saat ini kami tengah mengembangkan 2 kegiatan aktivitas utama, yakni
             konsultasi keuangan dan investasi.
           </div>
-          <div className="px-4 py-8 bg-white rounded-xl flex flex-col mb-8">
-            <div className="text-2xl text-blue-primary-500 mb-4 font-bold">
+          <div className="mb-8 flex flex-col rounded-xl bg-white px-4 py-8">
+            <div className="mb-4 text-2xl font-bold text-blue-primary-500">
               Konsultasi Keuangan
             </div>
             <p className="mb-2">
@@ -43,8 +43,8 @@ const PSContentSection: FC = () => {
             </p>
           </div>
           <KonsultasiKeuanganSection />
-          <div className="px-4 py-8 bg-white rounded-xl flex flex-col my-8">
-            <div className="text-2xl text-blue-primary-500 mb-4 font-bold">
+          <div className="my-8 flex flex-col rounded-xl bg-white px-4 py-8">
+            <div className="mb-4 text-2xl font-bold text-blue-primary-500">
               Kegiatan Investasi
             </div>
             <p className="mb-2">

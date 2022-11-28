@@ -10,7 +10,7 @@ const LinkText: FC<{
   return (
     <Link
       href={href}
-      className="flex justify-center items-center space-x-2 group "
+      className="group flex items-center justify-center space-x-2 "
     >
       <div className="">{children}</div>
       <ButtonArrow />

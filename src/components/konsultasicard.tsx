@@ -11,11 +11,11 @@ const KonsultasiCard: FC<{
   return (
     <Link
       href={href}
-      className="bg-white h-full border p-4 rounded-xl aspect-square shadow-xl w-full relative flex flex-col"
+      className="relative flex aspect-square h-full w-full flex-col rounded-xl border bg-white p-4 shadow-xl"
     >
-      <div className="w-full overflow-hidden rounded-2xl relative">
+      <div className="relative w-full overflow-hidden rounded-2xl">
         <Image src={logo} height={48} alt="" className="mb-6" />
-        <div className="text-blue-primary-500 text-2xl mb-2  font-black">
+        <div className="mb-2 text-2xl font-black  text-blue-primary-500">
           {title}
         </div>
         <div className=" text-justify">{content}</div>

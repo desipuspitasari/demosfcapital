@@ -3,7 +3,7 @@ import { Autoplay, Controller, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
-import ButtonOutline from "../../linkbtnoutline";
+import LinkBtnOutline from "../../linkbtnoutline";
 import homehero1 from "../../../../public/images/homehero1.jpeg";
 import homehero2 from "../../../../public/images/homehero2.jpeg";
 
@@ -38,36 +38,36 @@ const HomeHeroSection: FC = () => {
         modules={[Autoplay, Controller]}
         direction="horizontal"
         slidesPerView={1}
-        className="min-h-screen max-h-screen w-full group"
+        className="group max-h-screen min-h-screen w-full"
       >
         {heroBanner.map((item, index) => {
           return (
             <SwiperSlide
               key={index}
-              className="relative w-full min-h-screen after:absolute after:bg-gradient-to-l after:from-black/80 after:opacity-60 after:group-hover:opacity-100 after:to-black/0 after:inset-0 after:w-full after:h-full after:transition-opacity duration-2000"
+              className="duration-2000 relative min-h-screen w-full after:absolute after:inset-0 after:h-full after:w-full after:bg-gradient-to-l after:from-black/80 after:to-black/0 after:opacity-60 after:transition-opacity after:group-hover:opacity-100"
             >
               <Image
                 src={item.img}
                 alt=""
                 fill
                 priority
-                className="object-cover bg-contain"
+                className="bg-contain object-cover"
               />
             </SwiperSlide>
           );
         })}
       </Swiper>
 
-      <div className="absolute max-w-6xl w-full z-[2] top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 flex flex-row-reverse">
-        <div className="p-4 basis-full md:basis-1/2 flex flex-col text-white overflow-clip">
+      <div className="absolute top-1/2 left-1/2 z-[2] flex w-full max-w-6xl -translate-y-1/2 -translate-x-1/2 flex-row-reverse">
+        <div className="flex basis-full flex-col overflow-clip p-4 text-white md:basis-1/2">
           <div
-            className="w-full mb-4 flex space-x-2"
+            className="mb-4 flex w-full space-x-2"
             id="custom-pagination"
           ></div>
-          <div className="font-bold text-4xl mb-4">
+          <div className="mb-4 text-[40px] font-bold">
             PT Surya Fajar Capital Tbk
           </div>
-          <div className="font-light text-justify">
+          <div className="text-justify font-light">
             <Swiper
               onSwiper={(swiper) => {
                 swiperHeadline.current = swiper;
@@ -89,7 +89,7 @@ const HomeHeroSection: FC = () => {
             </Swiper>
           </div>
           <div className="mt-4">
-            <ButtonOutline href="#">Hubungi Kami</ButtonOutline>
+            <LinkBtnOutline href="#">Hubungi Kami</LinkBtnOutline>
           </div>
         </div>
       </div>

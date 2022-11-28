@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const StrukturOrganisasi = () => {
   return (
-    <div className="w-full rounded-2xl bg-white relative flex flex-col mt-20 drop-shadow-xl">
-      <div className="text-blue-primary-500 font-open-sans font-bold text-[38px] text-center mt-5">
+    <div className="relative mt-20 flex w-full flex-col rounded-2xl bg-white drop-shadow-xl">
+      <div className="mt-5 text-center font-open-sans text-[38px] font-bold text-blue-primary-500">
         Struktur Organisasi
       </div>
       <Image src={strukturorganisasi} alt="" />

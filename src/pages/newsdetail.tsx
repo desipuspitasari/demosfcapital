@@ -14,13 +14,13 @@ const NewsDetail: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <section className="min-h-screen w-full mt-[140px]">
-        <div className="w-full max-w-6xl flex-col px-4 lg:px-0 flex mx-auto">
-          <div className="flex flex-col justify-center text-black font-open-sans text-justify">
+      <section className="mt-[140px] min-h-screen w-full">
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 lg:px-0">
+          <div className="flex flex-col justify-center text-justify font-open-sans text-black">
             <div>
               <Image src={newsdetail} alt="" />
             </div>
-            <div className="text-[32px] font-black text-left mb-4 mt-6">
+            <div className="mb-4 mt-6 text-left text-[32px] font-black">
               Sebelum Nabung Saham, Yuk Kenali Risiko dan Keuntungannya!
             </div>
             <div className="mb-5">

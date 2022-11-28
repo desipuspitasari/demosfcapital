@@ -6,10 +6,10 @@ import { FC } from "react";
 const ProfilePerusahaan: FC = () => {
   return (
     <>
-      <section className="flex py-14 w-full flex-col bg-[white]">
-        <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-x-6 px-4 lg:px-0 mx-auto">
-          <div className="flex flex-col justify-center order-last md:order-first text-blue-primary-500  font-open-sans text-justify">
-            <div className="text-[32px] font-bold mb-4">Profil Perusahaan</div>
+      <section className="flex w-full flex-col bg-[white] py-14">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-x-6 px-4 lg:grid-cols-2 lg:px-0">
+          <div className="order-last flex flex-col justify-center text-justify font-open-sans  text-blue-primary-500 md:order-first">
+            <div className="mb-4 text-[32px] font-bold">Profil Perusahaan</div>
             <div className="mb-4">
               Didirikan pada akhir tahun 2016, Perseroan awalnya bergerak di
               bidang jasa konsultasi keuangan dengan tujuan memberikan solusi
@@ -31,7 +31,7 @@ const ProfilePerusahaan: FC = () => {
               Internasional yang luas.
             </div>
           </div>
-          <div className="max-h-[546px] rounded-xl mb-4 rounded-br-[100px] overflow-hidden max-w-[356px] h-[546px] w-[356px] justify-self-end">
+          <div className="mb-4 h-[546px] max-h-[546px] w-[356px] max-w-[356px] justify-self-end overflow-hidden rounded-xl rounded-br-[100px]">
             <Image src={profileperusahaan} alt="" />
           </div>
         </div>

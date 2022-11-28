@@ -44,7 +44,7 @@ const news = [
 
 const KonsultasiKeuanganSection: FC = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex w-full flex-col">
       <Swiper
         breakpoints={{
           0: {
@@ -84,7 +84,7 @@ const KonsultasiKeuanganSection: FC = () => {
         ))}
       </Swiper>
       <div
-        className="w-full justify-center space-x-2 flex mt-4 pb-8 border-b border-white"
+        className="mt-4 flex w-full justify-center space-x-2 border-b border-white pb-8"
         id="konsultasi-pagination"
       ></div>
     </div>

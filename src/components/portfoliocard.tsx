@@ -12,7 +12,7 @@ const PortfolioCard: FC<{
 }> = ({ image, href, title, content, bgcolor, logo }) => {
   return (
     <div
-      className={`max-w-[400px] aspect-[7/12] rounded-2xl rounded-tr-[100px] flex flex-col justify-end drop-shadow-xl overflow-hidden relative ${bgcolor}`}
+      className={`relative flex aspect-[7/12] max-w-[400px] flex-col justify-end overflow-hidden rounded-2xl rounded-tr-[100px] drop-shadow-xl ${bgcolor}`}
     >
       <Image
         src={image}
@@ -23,7 +23,7 @@ const PortfolioCard: FC<{
               (max-width: 1200px) 50vw,
               33vw"
       />
-      <div className="aspect-square w-full rounded-xl bg-white p-6 flex-col flex bottom-0 inset-x-0 z-0 relative">
+      <div className="relative inset-x-0 bottom-0 z-0 flex aspect-square w-full flex-col rounded-xl bg-white p-6">
         <Image
           src={logo}
           height={48}
@@ -33,9 +33,9 @@ const PortfolioCard: FC<{
               (max-width: 1200px) 50vw,
               33vw"
         />
-        <div className="font-bold text-2xl mb-2">{title}</div>
+        <div className="mb-2 text-2xl font-bold">{title}</div>
         <div className="">{content}</div>
-        <div className="self-start mt-auto">
+        <div className="mt-auto self-start">
           <ButtonLink href={href}>Lihat Detailnya</ButtonLink>
         </div>
       </div>

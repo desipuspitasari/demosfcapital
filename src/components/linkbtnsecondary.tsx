@@ -10,7 +10,7 @@ const LinkBtnSecondary: FC<{ href: any; children: ReactNode }> = ({
   return (
     <Link
       href={href}
-      className="bg-white space-x-2 font-open-sans text-base flex px-6 py-4 w-[262px] max-w-[262px] text-black group justify-center  rounded-full drop-shadow-xl"
+      className="group flex w-[262px] max-w-[262px] justify-center space-x-2 rounded-full bg-white px-6 py-4 font-open-sans text-base  text-black drop-shadow-xl"
     >
       <div className="">{children}</div>
       <ButtonArrow />
