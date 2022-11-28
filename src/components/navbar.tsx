@@ -3,7 +3,6 @@ import Image from "next/image";
 import NavItem from "./footer/navitem";
 import Link from "next/link";
 import SwicthLanguage from "./switchlanguage";
-import MenuButton from "./menubutton";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";

@@ -1,7 +1,4 @@
 import { FC } from "react";
-import { Fragment, useState, useEffect } from "react";
-import { Listbox, Transition } from "@headlessui/react";
-import { ChevronUpDownIcon } from "@heroicons/react/24/solid";
 
 const InformasiSahamContent: FC = () => {
   return (

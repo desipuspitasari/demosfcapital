@@ -1,6 +1,3 @@
-import Head from "next/head";
-import { NextPage } from "next";
-import Image from "next/image";
 import ManajemenCard from "../../../components/manajemencard";
 import manajemen1 from "../../../../public/images/manajemen1.png";
 import manajemen2 from "../../../../public/images/manajemen2.png";
