@@ -70,34 +70,34 @@ const NewsSection: FC = () => {
   return (
     <Tab.Group
       as="div"
-      className="flex py-14 w-full flex-col bg-gradient-to-b from-[#F0F0F0] to-white"
+      className="flex w-full flex-col bg-gradient-to-b from-[#F0F0F0] to-white py-14"
     >
-      <div className="w-full max-w-6xl space-y-8 flex-col flex mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 text-blue-primary-500 font-open-sans">
-          <div className="text-[32px] font-bold mb-2">
+      <div className="mx-auto flex w-full max-w-6xl flex-col space-y-8">
+        <div className="grid grid-cols-1 font-open-sans text-blue-primary-500 lg:grid-cols-2">
+          <div className="mb-2 text-[32px] font-bold">
             Berita dan Kegiatan Terbaru
           </div>
           <Tab.List
             as="div"
-            className="flex justify-center lg:justify-end space-x-2"
+            className="flex justify-center space-x-2 lg:justify-end"
           >
             <Tab
               as="button"
-              className="bg-blue-primary-500 font-open-sans text-base flex px-6 py-4 w-[262px] max-w-[262px] text-white group justify-center rounded-full "
+              className="group flex w-[262px] max-w-[262px] justify-center rounded-full bg-blue-primary-500 px-6 py-4 font-open-sans text-base text-white "
             >
               <div className="group-focus:border-b group-focus:border-white  ">
                 Rilis Media
               </div>
-              <FiArrowUpRight className="w-0 h-0 group-hover:w-4 group-hover:h-4 group-hover:transition-all group-focus:w-0 group-focus:h-0 transition-all" />
+              <FiArrowUpRight className="h-0 w-0 transition-all group-hover:h-4 group-hover:w-4 group-hover:transition-all group-focus:h-0 group-focus:w-0" />
             </Tab>
             <Tab
               as="button"
-              className="bg-blue-primary-500 font-open-sans text-base flex px-6 py-4 w-[262px] max-w-[262px] text-white group justify-center rounded-full "
+              className="group flex w-[262px] max-w-[262px] justify-center rounded-full bg-blue-primary-500 px-6 py-4 font-open-sans text-base text-white "
             >
               <div className="group-focus:border-b group-focus:border-white  ">
                 Internal
               </div>
-              <FiArrowUpRight className="w-0 h-0 group-hover:w-4 group-hover:h-4 group-hover:transition-all group-focus:w-0 group-focus:h-0 transition-all" />
+              <FiArrowUpRight className="h-0 w-0 transition-all group-hover:h-4 group-hover:w-4 group-hover:transition-all group-focus:h-0 group-focus:w-0" />
             </Tab>
           </Tab.List>
         </div>
@@ -145,7 +145,7 @@ const NewsSection: FC = () => {
                 ))}
               </Swiper>
               <div
-                className="flex justify-center items-center space-x-2"
+                className="flex items-center justify-center space-x-2"
                 id="custom-bullet-news"
               ></div>
             </>
@@ -193,7 +193,7 @@ const NewsSection: FC = () => {
                 ))}
               </Swiper>
               <div
-                className="flex justify-center items-center space-x-2"
+                className="flex items-center justify-center space-x-2"
                 id="custom-bullet-event"
               ></div>
             </>

@@ -18,7 +18,7 @@ const SwicthLanguage = () => {
 
   return (
     <button
-      className="p-1 bg-gray-100 rounded-full w-14 h-6 data-[lang='en']:justify-end justify-start flex relative"
+      className="relative flex h-6 w-14 justify-start rounded-full bg-gray-100 p-1 data-[lang='en']:justify-end"
       onClick={handleClick}
       data-lang={`${isLang}`}
     >
@@ -26,14 +26,14 @@ const SwicthLanguage = () => {
         layout
         transition={animatevariant}
         data-lang={`${isLang}`}
-        className="w-full h-full flex absolute inset-0 items-center text-sm font-bold p-1 data-[lang='en']:justify-start justify-end"
+        className="absolute inset-0 flex h-full w-full items-center justify-end p-1 text-sm font-bold data-[lang='en']:justify-start"
       >
         <AnimatePresence>
           {isLang == "id" ? <div>IND</div> : <div>ENG</div>}
         </AnimatePresence>
       </motion.div>
       <motion.div
-        className="h-4 w-4 bg-gray-600 rounded-full relative overflow-hidden"
+        className="relative h-4 w-4 overflow-hidden rounded-full bg-gray-600"
         layout
         transition={animatevariant}
       >

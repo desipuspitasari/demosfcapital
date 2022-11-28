@@ -1,6 +1,7 @@
 import { FC } from "react";
 import PortfolioCard from "../../portfoliocard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 
 import sekuritasbg from "../../../../public/images/sekuritas.webp";
 import dipaybg from "../../../../public/images/dipay.webp";
@@ -52,9 +53,18 @@ const item = [
 
 const PortfolioSection: FC = () => {
   return (
-    <section className="flex pt-32 pb-16 w-full flex-col bg-[#F1F1F1]">
-      <div className="w-full flex max-w-6xl  mx-auto px-4  lg:px-0 ">
+    <section className="flex w-full flex-col bg-[#F1F1F1] py-16 px-2">
+      <div className="mx-auto flex w-full max-w-6xl flex-col">
+        <div className="mb-2 w-full text-center text-[32px] font-bold text-blue-primary-500">
+          Portfolio
+        </div>
+        <div className="text-center">
+          Dalam waktu kurang dari satu tahun sejak didirikan, SF Capital telah
+          dianugerahi banyak mandat dari berbagai klien - beberapa di antaranya
+          menjadi pemain kunci dalam industri ini.
+        </div>
         <Swiper
+          modules={[Pagination]}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -72,7 +82,14 @@ const PortfolioSection: FC = () => {
           direction="horizontal"
           spaceBetween={50}
           slidesPerView={3}
-          className="!py-6 !px-4"
+          className="w-full !py-6 !px-4"
+          pagination={{
+            clickable: true,
+            el: "#swiper-bullet-protfolio",
+            type: "bullets",
+            bulletClass: "swiper-bullet",
+            bulletActiveClass: "swiper-bullet-active",
+          }}
         >
           {item.map((i) => (
             <SwiperSlide key={i.title}>
@@ -87,6 +104,10 @@ const PortfolioSection: FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div
+          className="flex w-full justify-center space-x-2"
+          id="swiper-bullet-protfolio"
+        ></div>
       </div>
     </section>
   );

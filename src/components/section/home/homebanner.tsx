@@ -8,10 +8,10 @@ import { FC } from "react";
 const HomeBanner: FC = () => {
   return (
     <>
-      <section className="flex pt-32 pb-16 w-full flex-col bg-white">
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto px-4 lg:px-0">
-          <div className="order-last md:order-first flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
-            <div className="text-[32px] font-bold mb-4">Who We Are</div>
+      <section className="flex w-full flex-col bg-white pt-32 pb-16">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:px-0">
+          <div className="order-last flex flex-col justify-center text-justify font-open-sans  text-blue-primary-500 md:order-first">
+            <div className="mb-4 text-[32px] font-bold">Who We Are</div>
             <div>
               PT Surya Fajar Capital Tbk adalah perusahaan investasi dengan
               keahlian serta pengalaman di Indonesia dengan perjalanan yang kuat
@@ -19,18 +19,18 @@ const HomeBanner: FC = () => {
               perusahaan-perusahaan unggulan.
             </div>
           </div>
-          <div className="max-h-[546px] rounded-xl  rounded-tl-[100px] overflow-hidden max-w-[546px] justify-self-end">
+          <div className="max-h-[546px] max-w-[546px] justify-self-end overflow-hidden rounded-xl rounded-tl-[120px]">
             <Image src={homebanner} alt="" />
           </div>
         </div>
       </section>
-      <section className="flex pb-32 pt-16 w-full flex-col bg-white">
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto px-4 lg:px-0">
-          <div className="max-h-[546px] rounded-xl rounded-br-[100px] overflow-hidden max-w-[546px]">
+      <section className="flex w-full flex-col bg-white pb-32 pt-16">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-2 lg:px-0">
+          <div className="max-h-[546px] max-w-[546px] overflow-hidden rounded-xl rounded-br-[120px]">
             <Image src={homebanner2} alt="" />
           </div>
-          <div className="flex flex-col justify-center text-blue-primary-500  font-open-sans text-justify">
-            <div className="text-[32px] font-bold mb-4">What We Do</div>
+          <div className="flex flex-col justify-center text-justify  font-open-sans text-blue-primary-500">
+            <div className="mb-4 text-[32px] font-bold">What We Do</div>
             <div className="mb-4">
               Fokus kami pada jasa konsultasi keuangan serta berinvestsai pada
               perusahaan yang memiliki potensi pertumbuhan dengan meningkatkan
@@ -47,10 +47,10 @@ const HomeBanner: FC = () => {
           </div>
         </div>
       </section>
-      <section className="flex py-28 w-full flex-col bg-noise1 bg-cover bg-opacity-20">
-        <div className="w-full max-w-6xl flex-col flex mx-auto px-4 lg:px-0">
-          <div className="flex flex-col justify-center text-white font-open-sans text-justify">
-            <div className="text-[32px] font-bold mb-4">Industry Strategy</div>
+      <section className="flex w-full flex-col bg-opacity-20 bg-noise1 bg-cover py-28">
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-4 lg:px-0">
+          <div className="flex flex-col justify-center text-justify font-open-sans text-white">
+            <div className="mb-4 text-[32px] font-bold">Industry Strategy</div>
             <div className="mb-5">
               Kami percaya bahwa Indonesia memiliki peluang untuk mengembangkan
               potensi dalam dunia investasi kedepannya. PT Surya Fajar Capital
@@ -59,7 +59,7 @@ const HomeBanner: FC = () => {
               sektor-sektor yang kami yakini dapat memanfaatkan pengalaman
               mendalam dan hubungan jangka panjang.
             </div>
-            <div className="mb-5 pb-5 border-b border-white">
+            <div className="mb-5 border-b border-white pb-5">
               PT Surya Fajar Capital memanfaatkan peluang secara optimal dalam
               duniai investasi, terutama melalui para professional dan
               eksekutif. Bersama-sama dengan mitra bisnis, PT Surya Fajar
@@ -71,7 +71,7 @@ const HomeBanner: FC = () => {
               mengidentifikasi potensi usaha suatu perusahaan agar dapat
               berkembang lebih maksimal.
             </div>
-            <div className="text-[32px] font-bold mb-4">Industry Expertise</div>
+            <div className="mb-4 text-[32px] font-bold">Industry Expertise</div>
             <div className="mb-5">
               Kami berupaya dalam membantu perusahaan untuk mewujudkan potensi
               pertumbuhan mereka. Kami percaya dalam keahlian profesional tim

@@ -29,32 +29,32 @@ const About: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
-        <section className="max-h-[500px] min-h-[500px] flex flex-col px-2 pb-4 justify-end  w-full bg-about bg-cover  bg-left">
-          <div className="w-full max-w-6xl flex flex-col mx-auto ">
-            <div className="font-bold text-white text-[40px] ">
+        <section className="flex max-h-[500px] min-h-[500px] w-full flex-col justify-end bg-about  bg-cover bg-left px-2  pb-4">
+          <div className="mx-auto flex w-full max-w-6xl flex-col ">
+            <div className="text-[40px] font-bold text-white ">
               Tentang Kami
             </div>
             <Tab.List
               as="div"
-              className="flex space-x-2 w-full overflow-x-auto box-border whitespace-nowrap flex-nowrap"
+              className="box-border flex w-full flex-nowrap space-x-2 overflow-x-auto whitespace-nowrap"
             >
               {tablists.map((item, index) => (
                 <Tab
                   onClick={() => setSelectedIndex(index)}
                   as="button"
                   key={index}
-                  className="border-white border-[1px] font-open-sans text-base flex px-6 py-4 w-[262px] max-w-[262px] text-white group justify-center rounded-full"
+                  className="group flex w-[262px] max-w-[262px] justify-center rounded-full border-[1px] border-white px-6 py-4 font-open-sans text-base text-white"
                 >
                   <div className="group-focus:border-b group-focus:border-white">
                     {item.name}
                   </div>
-                  <FiArrowUpRight className="w-0 h-0 group-hover:w-4 group-hover:h-4 group-hover:transition-all group-focus:w-0 group-focus:h-0 transition-all" />
+                  <FiArrowUpRight className="h-0 w-0 transition-all group-hover:h-4 group-hover:w-4 group-hover:transition-all group-focus:h-0 group-focus:w-0" />
                 </Tab>
               ))}
             </Tab.List>
           </div>
         </section>
-        <Tab.Panels as="section" className="w-full max-w-6xl px-2 mx-auto ">
+        <Tab.Panels as="section" className="mx-auto w-full max-w-6xl px-2 ">
           {tablists.map((item, index) => (
             <Tab.Panel key={index}>{item.content}</Tab.Panel>
           ))}

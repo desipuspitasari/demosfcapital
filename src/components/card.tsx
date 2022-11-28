@@ -11,8 +11,8 @@ const Card: FC<{
   image: any;
 }> = ({ title, content, date, href, image }) => {
   return (
-    <div className="bg-white pb-6 h-full border p-4 rounded-xl rounded-br-[70px] drop-shadow-xl w-full ">
-      <div className="w-full  overflow-hidden rounded-2xl aspect-square relative">
+    <div className="h-full w-full rounded-xl rounded-br-[70px] border bg-white p-4 pb-6 drop-shadow-xl ">
+      <div className="relative  aspect-square w-full overflow-hidden rounded-2xl">
         <Image
           fill
           src={image}
@@ -23,10 +23,10 @@ const Card: FC<{
           className="object-cover"
         />
       </div>
-      <div className="text-blue-primary-500 text-2xl font-bold">{title}</div>
+      <div className="text-2xl font-bold text-blue-primary-500">{title}</div>
       <div className="mt-2">{content}</div>
-      <div className="text-sm text-neutral-300 mt-2">{date}</div>
-      <div className="py-2 mt-2 flex">
+      <div className="mt-2 text-sm text-neutral-300">{date}</div>
+      <div className="mt-2 flex py-2">
         <ButtonLink href={href}>Lihat Detailnya</ButtonLink>
       </div>
     </div>

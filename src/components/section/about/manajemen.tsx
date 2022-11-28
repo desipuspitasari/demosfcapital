@@ -27,11 +27,11 @@ const news = [
 const Manajemen = () => {
   return (
     <>
-      <section className="w-full bg-white relative flex flex-col mt-20 ">
-        <div className="flex flex-col justify-center order-last md:order-first text-blue-primary-500  font-open-sans text-center">
-          <div className="text-[32px] font-bold mb-4">Manajemen</div>
+      <section className="relative mt-20 flex w-full flex-col bg-white ">
+        <div className="flex flex-col justify-center text-center  font-open-sans text-blue-primary-500">
+          <div className="mb-4 text-[32px] font-bold">Manajemen</div>
         </div>
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto px-4 lg:px-0">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
           {news.map((i) => (
             <ManajemenCard
               key={i.name}

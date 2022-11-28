@@ -9,14 +9,14 @@ const ManajemenCard: FC<{
   content: string;
 }> = ({ image, name, content }) => {
   return (
-    <div className="bg-white pb-6  ">
-      <div className="w-full max-h-[180px] max-w-[356px] aspect-square relative">
-        <Image fill src={image} alt="" />
+    <div className="mb-6 bg-white">
+      <div className="relative">
+        <Image src={image} alt="" />
       </div>
-      <div className="text-blue-primary-500 text-2xl pl-6 font-semibold">
+      <div className="pl-6 text-2xl font-semibold text-blue-primary-500">
         {name}
       </div>
-      <div className="mt-2 text-blue-primary-500 pl-6">{content}</div>
+      <div className="mt-2 pl-6 text-blue-primary-500">{content}</div>
     </div>
   );
 };

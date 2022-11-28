@@ -4,11 +4,11 @@ import tatakelolaitem from "./tatakelolaitem";
 
 const TatakelolaPerusahaan = () => {
   return (
-    <div className="flex flex-col w-full space-y-4 my-20">
-      <div className="text-4xl text-center text-blue-primary-500 mb-6 font-bold">
+    <div className="my-20 flex w-full flex-col space-y-4">
+      <div className="mb-6 text-center text-4xl font-bold text-blue-primary-500">
         Tata Kelola Perusahaan
       </div>
-      <div className="text-justify pb-6">
+      <div className="pb-6 text-justify">
         Penerapan Tata Kelola Perusahaan yang baik atau Good Corporate
         Governance merupakan bentuk upaya dari Perseroan untuk membangun suatu
         organisasi yang memiliki aturan, praktik, dan proses pengendalian yang
@@ -20,25 +20,25 @@ const TatakelolaPerusahaan = () => {
           <Disclosure
             key={index}
             as="div"
-            className="flex flex-col w-full space-y-2"
+            className="flex w-full flex-col space-y-2"
           >
             {({ open }) => (
               <>
                 <Disclosure.Button
-                  className={`flex justify-between items-center rounded-xl px-4 py-2 border ${
+                  className={`flex items-center justify-between rounded-xl border px-4 py-2 ${
                     open ? "bg-gray-100" : "bg-white"
                   }`}
                 >
                   {item.title}
                   <ChevronUpIcon
-                    className={`w-4 h-4 transition-all ${
+                    className={`h-4 w-4 transition-all ${
                       open ? "rotate-180 transform" : ""
                     }`}
                   />
                 </Disclosure.Button>
                 <Disclosure.Panel
                   as="div"
-                  className="bg-white w-full px-4 py-6 border rounded-xl text-slate-600 space-y-2 text-justify"
+                  className="w-full space-y-2 rounded-xl border bg-white px-4 py-6 text-justify text-slate-600"
                 >
                   {item.content}
                 </Disclosure.Panel>

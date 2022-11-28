@@ -7,7 +7,7 @@ import PSContentSection from "../components/section/productsandservices/psconten
 
 const ProductAndServices: NextPage = () => {
   return (
-    <div className="bg-noise2 bg-no-repeat bg-cover">
+    <div className="bg-noise2 bg-cover bg-no-repeat">
       <Head>
         <title>SF Capital</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

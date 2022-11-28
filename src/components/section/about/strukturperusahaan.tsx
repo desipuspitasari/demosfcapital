@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const StrukturPerusahaan = () => {
   return (
-    <div className="w-full rounded-lg  bg-white relative flex flex-col mt-20 drop-shadow-xl">
-      <div className="text-blue-primary-500 font-open-sans font-bold text-[38px] text-center mt-5">
+    <div className="relative mt-20  flex w-full flex-col rounded-lg bg-white drop-shadow-xl">
+      <div className="mt-5 text-center font-open-sans text-[38px] font-bold text-blue-primary-500">
         Struktur Perusahaan
       </div>
-      <div className="w-full max-h-[862px] max-w-[1116px]  relative">
+      <div className="relative max-h-[862px] w-full  max-w-[1116px]">
         <Image src={strukturperusahaan} alt="" />
       </div>
     </div>

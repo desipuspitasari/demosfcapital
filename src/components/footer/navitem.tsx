@@ -9,7 +9,7 @@ const NavItem: FC<{ href: any; children: ReactNode }> = ({
   return (
     <Link
       href={href}
-      className="after:content-[''] after:h-[1px] after:bg-black after:w-0 after:block after:hover:w-full after:transition-all self-start"
+      className="self-start after:block after:h-[1px] after:w-0 after:bg-black after:transition-all after:content-[''] after:hover:w-full"
     >
       {children}
     </Link>
